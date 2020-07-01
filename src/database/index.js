@@ -8,3 +8,5 @@ const connection = new Sequelize(dbConfig);
 
 Movie.init(connection);
 Category.init(connection);
+
+Movie.associate(connection.models);
