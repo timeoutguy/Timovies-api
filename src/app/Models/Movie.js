@@ -11,10 +11,6 @@ class Movies extends Model {
       sequelize, modelName: 'movies',
     });
   }
-
-  static associate(models) {
-    this.hasOne(models.categorys, { foreignKey: 'category_id', as: 'category' });
-  }
 }
 
 export default Movies;
